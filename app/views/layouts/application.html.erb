@@ -33,9 +33,10 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <% if_user_sign_in? %>
-        <li><%= link_to 'A User Signed In', '#' %></li>
+        <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
+        <li><%= link_to 'A User Signed In', new_user_session_path %></li>
         <% else %>
-        <li><%= link_to 'No User Signed In :(','#' %></li>
+        <li><%= link_to 'No User Signed In :(', new_user_registration_path %></li>
         <% end %>
 
         <li><a href="#">Link</a></li>
