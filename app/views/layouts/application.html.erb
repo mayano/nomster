@@ -32,7 +32,7 @@
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <% if_user_sign_in? %>
+        <% if_user_signed_in? %>
         <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
         <li><%= link_to 'A User Signed In', new_user_session_path %></li>
         <% else %>
