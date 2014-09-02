@@ -7,6 +7,7 @@ before_action :authenticate_user!, :only => [:new, :create]
 
 	def new
 		@place = Place.new
+		redirect_to new_place_path
 	end
 
 	def create
