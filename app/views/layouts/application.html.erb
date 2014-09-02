@@ -25,14 +25,14 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <%= link_to 'new_place' do %>
+        <%= link_to 'new_place_path' do %>
         <i class="glyphicon glyphicon-plus-sign"></i>
         New Place
         <% end %>
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <% if_user_signed_in? %>
+        <% if user_signed_in? %>
         <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
         <li><%= link_to 'Sign in', new_user_session_path %></li>
         <% else %>
