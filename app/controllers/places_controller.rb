@@ -15,7 +15,7 @@ before_action :authenticate_user!, :only => [:new, :create, :edit, :destroy]
 		if @place.valid?
 			redirect_to root_path
 		else
-			render :new, :status => unprocessable_entity
+			render :new, :status => :unprocessable_entity
 		end
 	end
 
@@ -40,7 +40,7 @@ before_action :authenticate_user!, :only => [:new, :create, :edit, :destroy]
 		if @place.valid?
 			redirect_to root_path
 		else
-			render :new, :status => unprocessable_entity
+			render :new, :status => :unprocessable_entity
 		end
 	end
 
