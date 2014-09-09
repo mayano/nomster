@@ -6,6 +6,8 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)
 
+GEOCODER_API_KEY: "AkggqL7r2ivbUa3L1lcfbZ4RTDFxROf8XO1Ime6_JbE-q2DjWs72fMRo43ACClot"
+
 module Nomster
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
