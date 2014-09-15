@@ -43,6 +43,8 @@ gem 'kaminari'
 gem "geocoder"
 
 gem "figaro"
+
+gem 'carrierwave'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
