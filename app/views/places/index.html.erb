@@ -23,6 +23,13 @@
   	</div>
   <% end %>
 
+<% @place.photos.each do |photo| %>
+      <%= image_tag photo.picture, :class => 'img-responsive' %>
+      <i><%= photo.caption %></i>
+<% end %>
+<br/><br/>
+
+
   </div>
 
 
