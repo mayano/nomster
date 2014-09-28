@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
 	def show
-		<h1> User Dashboard </h1>
+		@user = User.find (params[:id])
 	end
 end
