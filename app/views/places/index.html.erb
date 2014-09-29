@@ -50,14 +50,15 @@
     <h1><%= place.name %></h1><br />
     <i><%= place.address %></i><br /> <br />
     <p><%= place.description %></p><br />
+
   	<% if place.user.present? %>
   	<i><small><p>Uploader : <%= place.user.email %></p></small></i>
-  	<% end %>
+    <% end %>
 
-<% place.photos.each do |photo| %>
-    <%= image_tag photo.picture, :class => 'img-responsive' %>
-    <i><%= photo.caption %></i>
-<% end %>
+  <% place.photos.each do |photo| %>
+      <%= image_tag photo.picture, :class => 'img-responsive' %>
+      <i><%= photo.caption %></i>
+  <% end %>
 
   <% if place.comments.present? %>
   	<div class="col-xs-12">
